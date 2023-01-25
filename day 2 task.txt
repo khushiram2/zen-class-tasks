@@ -1,0 +1,28 @@
+Difference between window and document objects are
+
+window object:-
+1 Window object is at the top level of the java object hierarchy. It is a global object in javascript and it is the root object of the 
+DOM(document object model)
+
+2 It represents the browser window in which you are seeing the window
+
+3 Properties related to the window are stored in this object
+
+4 It is loaded before the document because it contains the documennt
+
+5 We can access document object properties inside window 
+
+
+
+Document object:-
+1 A document object lies inside the window object and we use this for manipulation inside the document manipulation
+
+2 It represents the document loaded inside the window or browser 
+
+3 The properties related to it are stored in document object 
+
+4 It is loaded after the window because window contains the document 
+
+5 you can not access window object properties in a document 
+
+6
