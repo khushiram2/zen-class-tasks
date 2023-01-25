@@ -1,0 +1,47 @@
+Differences between http1.1 and http 2 are as follows
+1) http1.1 is slower than http2 because http1.1 loads data one after another on the other hand http2 uses one tcp connection and divide
+the data in multiple streams so when in http1.1 if one data got blocked all the others will be blocked which inturn slows the process of
+loading where as http 2 has no such problem
+
+2) To speed up the transfer of data both http1.1 and http2 compress the data in http packets but http 2 uses more advacnce compression
+known as HPACK which is a few bytes smaller than http1.1 header packs. although these few bytes are not much singularly but when we consider
+how many of these packets are used just to load one web page. these few bytes add up to much more bigger data which http2 doesn't have to send 
+so it is faster
+
+3) http 2 offers something called as weighted priortisation. this is different from http1.1 where there was no such thing and client just used
+to send a req to the server and server used to respond according to the request resources asked by client and in the same order but in http2 
+because there is a division of request in multiple streams so develpoers can decide which request of resources to priortise first.
+
+
+
+
+objects and it's representation in java script
+objects comes under composite data types and they are together there with arrays. where primitive data type can only store one value object can
+store multiple values in a key:value pair and these pairs should be inside {} 
+representation of object is very similar 
+var obj = movie{
+ Name:xyz,
+releaseYear:20**'
+geners:["romance","action","sci_fi"],
+}
+if you want to add a key:value pair you have to do this
+
+objectname.key=value 
+
+example => movie.ranking=4
+
+now there will be new key:value pair added in your object 
+there are a few things to keep in mind that you should take care off spellings and case i.e. uppercase or lower case because same method
+is used to update a value of certain key
+
+example=> we added a new key:value pair above which was ranking and i want to update it's value then i'll have to do this
+movie.ranking=14  but if i write movie.Ranking=15 then new key:value pair will be added in the object
+
+for deleting you have to use 
+
+delete objectname.key
+
+example=> delete movie.releaseYear 
+now releaseYear key will be deleted from object with it's value
+
+
