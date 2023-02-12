@@ -1,0 +1,268 @@
+ques 1 
+
+a
+
+ iife 
+        (
+            function(a){
+                for(var i=0;i<a.length;i++){
+                    if(a[i]%2!=0){
+                        console.log(a[i])
+                    }
+                }
+            }
+        )([2,4,5,7,8,10,23,45])
+---------------------------------------------------------------------------------
+anonymus 
+
+var getodd=function(b){
+            a=[]
+                for(var i=0;i<b.length;i++){
+                    if(b[i]%2!==0){
+                        a.push(b[i])
+                        
+                    }
+            }return (a.join(" "))
+        }
+
+        console.log(getodd([2,4,5,7,8,10,23,45]))
+=====================================================================================
+b
+
+iffe
+(
+
+function(a){
+    b=[]
+for(var i=0;i<a.length;i++){
+c = a[i][0].toUpperCase()+a[i].slice(1,a[i].length)
+b.push(c)
+    }
+console.log(b)
+}
+)()
+--------------------------------------------------------------------------------------
+anonymus
+
+
+var titleCaps=function(a){
+    b=[]
+for(var i=0;i<a.length;i++){
+c = a[i][0].toUpperCase()+a[i].slice(1,a[i].length)
+b.push(c)
+    }
+return b
+}
+
+======================================================================================
+
+
+c
+  iife
+(
+   
+    function(a){
+         sum=0
+        for(var i=0;i<a.length;i++){
+            sum+=a[i]
+        }
+        return sum
+    }
+)([2,45,67,89,98,76,54])
+-------------------------------------------------------------------------------------
+anonymus
+
+var addArray=function(a){
+sum=0
+for(var i=0;i<a.length;i++){
+            sum+=a[i]
+        }
+        return sum
+    }
+}
+console.log(addArray([23,56,78,97,75,46]))
+======================================================================================
+d 
+iffe
+(
+    function(arr){
+        final=[]
+for(var i=0;i<arr.length;i++){
+    isprime=true
+    for(j=2;j<arr[i]/2;j++){
+    if( arr[i]%j==0){
+       isprime=false
+    }
+ 
+  }if(isprime){
+        final.push(arr[i])
+  } 
+  }
+  return final
+})()
+---------------------------------------------------------------------------------------
+anonymus
+var prime =function(arr){
+final=[]
+for(var i=0;i<arr.length;i++){
+    isprime=true
+    for(j=2;j<arr[i]/2;j++){
+    if( arr[i]%j==0){
+       isprime=false
+    }
+ 
+  }if(isprime){
+        final.push(arr[i])
+  } 
+  }
+  return final
+}
+=======================================================================================
+
+e
+iife 
+(
+    
+    function(a){
+        temp=[]
+        for(var i=0;i<a.length;i++){
+            let c = a[i].split("").reverse().join("")
+            if(a[i]==c){
+                temp.push(a[i])
+            }
+        }return temp
+    }
+
+)(["ete","tar","yoy","potop"])
+---------------------------------------------------------------------------------------
+anonymus
+
+var returnPalindromes=function(a){
+    temp=[]
+    for(var i=0;i<a.length;i++){
+            let c = a[i].split("").reverse().join("")
+            if(a[i]==c){
+                temp.push(a[i])
+            }
+        }return temp
+
+}
+=======================================================================================
+f
+iffe
+(
+    function(a,b){
+       joined= a.concat(b)
+       joined.sort()
+       if(joined.length%2!=0){
+        return joined[(joined.length-1)/2]
+       }else{
+       return (joined[joined.length/2-1] + joined[joined.length/2])/2
+       }
+        
+    }
+)()
+-----------------------------------------------------------------------------------------
+anonymus
+var medianOfTWO=function(a,b){
+     joined= a.concat(b)
+       joined.sort()
+       if(joined.length%2!=0){
+        return joined[(joined.length-1)/2]
+       }else{
+       return (joined[joined.length/2-1] + joined[joined.length/2])/2
+       }
+}
+==========================================================================================
+g
+iffe
+( 
+   
+    function(a){
+         temp=[]
+        for(let i=0;i<a.length;i++){
+          if( temp.indexOf(a[i])==-1){
+            temp.push(a[i])
+          }
+        }return temp
+    }
+)()
+-------------------------------------------------------------------------------------------
+anonymus
+var removeDuplicate= function(a){
+    temp=[]
+    for(let i=0;i<a.length;i++){
+          if( temp.indexOf(a[i])==-1){
+            temp.push(a[i])
+             }
+        }return temp
+
+}
+=============================================================================================
+=============================================================================================
+ 
+ques 3
+
+a.
+
+var oddnumber=(a)=>{
+    arr=[]
+    for(let i=0;i<a.length;i++){
+        if(a[i]%2!=0){
+            arr.push(a[i])
+        }
+    }return arr
+
+}
+----------------------------------------------------------------------------------------------
+b
+var titleCaps=(a)=>{
+    b=[]
+for(var i=0;i<a.length;i++){
+c = a[i][0].toUpperCase()+a[i].slice(1,a[i].length)
+b.push(c)
+    }
+return b
+}
+---------------------------------------------------------------------------------------------
+c. 
+var sumAll=(a)=>{
+    sum=0
+    for(let i=0;i<a.length;i++){
+        sum+=a[i]
+    }return sum
+}
+
+---------------------------------------------------------------------------------------------
+d.
+var prime =(arr)=>{
+final=[]
+for(var i=0;i<arr.length;i++){
+    isprime=true
+    for(j=2;j<arr[i]/2;j++){
+    if( arr[i]%j==0){
+       isprime=false
+    }
+ 
+  }if(isprime){
+        final.push(arr[i])
+  } 
+  }
+  return final
+}
+
+---------------------------------------------------------------------------------------------
+e.
+
+var primodial=(a)=>{
+    temp=[]
+     for(var i=0;i<a.length;i++){
+            let c = a[i].split("").reverse().join("")
+            if(a[i]==c){
+                temp.push(a[i
+            }
+        }return temp
+
+}
+----------------------------------------------------------------------------------------------
+
