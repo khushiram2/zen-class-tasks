@@ -1,0 +1,65 @@
+day 7
+ques 1 
+a   
+//start here
+
+var data = new XMLHttpRequest()
+        data.open('GET','https://restcountries.com/v3.1/all')
+        data.send()
+        data.onload=function(){
+            var rat = JSON.parse(data.response)
+            var asianCountries=rat.filter((element)=>element.continents=='Asia' && element.region=='Asia')
+              console.log(asianCountries)
+        }
+//end here
+
+b
+//start here
+        var data=new XMLHttpRequest()
+        data.open('GET','https://restcountries.com/v3.1/all')
+        data.send()
+        data.onload=function(){
+            var lowPopulation=JSON.parse(data.response)
+            var lowPopulationCount=lowPopulation.filter((element)=>element.population<200000)
+            console.log(lowPopulationCount)
+        }
+//end here
+c
+//start here
+        var data=new XMLHttpRequest()
+        data.open('GET','https://restcountries.com/v3.1/all')
+        data.send()
+        data.onload = function(){
+            var nameCapFlg= JSON.parse(data.response)
+            nameCapFlg.forEach(element => {
+                console.log(element.name.common,element.capital,element.flags.png)
+                
+            });
+        }
+//end here
+d
+//start here
+    var data=new XMLHttpRequest()
+        data.open('GET','https://restcountries.com/v3.1/all')
+        data.send()
+        data.onload=function(){
+            var totalpop=JSON.parse(data.response)
+            totalpop.reduce((acc,elenemt)=>console.log(elenemt.name.common,elenemt.population))
+        }
+//end here
+
+e
+//start here
+     var data=new XMLHttpRequest()
+        data.open('GET','https://restcountries.com/v3.1/all')
+        data.send()
+        data.onload = function(){
+            var USDo= JSON.parse(data.response)
+
+          var turn=  USDo.filter((element)=> element.currencies?.USD)
+                   console.log(turn)
+         
+        }
+//end here
+
+
